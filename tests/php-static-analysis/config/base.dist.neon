@@ -10,6 +10,8 @@ parameters:
     bootstrapFiles:
         - ../../../approot.inc.php
         - ../../../bootstrap.inc.php
+        - ../../../tests/php-unit-tests/vendor/autoload.php
+
     scanFiles:
         # Files necessary as they contain some declarations (constants, classes, functions, ...)
         - ../../../approot.inc.php
