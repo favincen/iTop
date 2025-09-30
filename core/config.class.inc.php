@@ -20,7 +20,7 @@
  */
 
 
-use Combodo\iTop\Core\Configuration\ConfigLoader;
+use Combodo\iTop\Core\Configuration\ConfigManager;
 
 define('ITOP_APPLICATION', 'iTop');
 define('ITOP_APPLICATION_SHORT', 'iTop');
@@ -2098,21 +2098,21 @@ class Config
 	{
 		$this->CheckFile('configuration', $sConfigFile);
 
-		[$MySettings, $MyModuleSettings, $MyModules] = ConfigLoader::GetInstance()->Load($sConfigFile);
+		[$MySettings, $MyModuleSettings, $MyModules] = ConfigManager::GetInstance()->Load($sConfigFile);
 
 		$this->m_aAddons = $MyModules['addons'];
 
-		foreach ($MySettings as $sPropCode => $rawvalue)
+		foreach ($MySettings as $sPropCode => $rawValue)
 		{
 			if ($this->IsProperty($sPropCode))
 			{
-				if (is_string($rawvalue))
+				if (is_string($rawValue))
 				{
-					$value = trim($rawvalue);
+					$value = trim($rawValue);
 				}
 				else
 				{
-					$value = $rawvalue;
+					$value = $rawValue;
 				}
 				$this->Set($sPropCode, $value, $sConfigFile, true);
 			}
