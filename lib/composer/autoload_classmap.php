@@ -414,6 +414,7 @@ return array(
     'Combodo\\iTop\\Core\\Authentication\\Client\\OAuth\\OAuthClientProviderFactory' => $baseDir . '/sources/Core/Authentication/Client/OAuth/OAuthClientProviderFactory.php',
     'Combodo\\iTop\\Core\\Authentication\\Client\\OAuth\\OAuthClientProviderGoogle' => $baseDir . '/sources/Core/Authentication/Client/OAuth/OAuthClientProviderGoogle.php',
     'Combodo\\iTop\\Core\\CMDBChange\\CMDBChangeOrigin' => $baseDir . '/sources/Core/CMDBChange/CMDBChangeOrigin.php',
+    'Combodo\\iTop\\Core\\Configuration\\ConfigLoader' => $baseDir . '/sources/Core/Configuration/ConfigLoader.php',
     'Combodo\\iTop\\Core\\DbConnectionWrapper' => $baseDir . '/core/DbConnectionWrapper.php',
     'Combodo\\iTop\\Core\\Email\\EMailSymfony' => $baseDir . '/sources/Core/Email/EmailSymfony.php',
     'Combodo\\iTop\\Core\\Email\\EmailFactory' => $baseDir . '/sources/Core/Email/EmailFactory.php',

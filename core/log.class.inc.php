@@ -745,6 +745,17 @@ abstract class LogAPI
 		static::Log(self::LEVEL_TRACE, $sMessage, $sChannel, $aContext);
 	}
 
+	public static function Exception(string $sMessage, throwable $previous): void
+	{
+		if (is_null($previous)) {
+			$previous = new Exception('');
+		}
+
+		$aContext['error'] = $previous->getMessage();
+		$aContext['stack'] = $previous->getTraceAsString();
+		static::Error($sMessage, static::CHANNEL_DEFAULT, $aContext);
+	}
+
 	/**
 	 * @throws \ConfigException if log wrongly configured
 	 */

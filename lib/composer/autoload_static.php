@@ -779,6 +779,7 @@ class ComposerStaticInit7f81b4a2a468a061c306af5e447a9a9f
         'Combodo\\iTop\\Core\\Authentication\\Client\\OAuth\\OAuthClientProviderFactory' => __DIR__ . '/../..' . '/sources/Core/Authentication/Client/OAuth/OAuthClientProviderFactory.php',
         'Combodo\\iTop\\Core\\Authentication\\Client\\OAuth\\OAuthClientProviderGoogle' => __DIR__ . '/../..' . '/sources/Core/Authentication/Client/OAuth/OAuthClientProviderGoogle.php',
         'Combodo\\iTop\\Core\\CMDBChange\\CMDBChangeOrigin' => __DIR__ . '/../..' . '/sources/Core/CMDBChange/CMDBChangeOrigin.php',
+        'Combodo\\iTop\\Core\\Configuration\\ConfigLoader' => __DIR__ . '/../..' . '/sources/Core/Configuration/ConfigLoader.php',
         'Combodo\\iTop\\Core\\DbConnectionWrapper' => __DIR__ . '/../..' . '/core/DbConnectionWrapper.php',
         'Combodo\\iTop\\Core\\Email\\EMailSymfony' => __DIR__ . '/../..' . '/sources/Core/Email/EmailSymfony.php',
         'Combodo\\iTop\\Core\\Email\\EmailFactory' => __DIR__ . '/../..' . '/sources/Core/Email/EmailFactory.php',
